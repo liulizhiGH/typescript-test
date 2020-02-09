@@ -2,7 +2,7 @@ const HTMLWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
 
   context: path.resolve(__dirname, "../"),
 
@@ -12,16 +12,6 @@ module.exports = {
     filename: "[name].js",
     path: path.resolve(__dirname, "../dist")
   },
-
-  devServer: {
-    contentBase: "./dist",
-    port: 8787,
-    open: true,
-    hot: true,
-    historyApiFallback: true
-  },
-
-  devtool: "source-map",
 
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".json"]

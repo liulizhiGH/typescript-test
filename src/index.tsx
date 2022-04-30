@@ -6,7 +6,7 @@ import { Hello } from "./components/Hello";
 import xxx from './123'
 
 xxx();
-console.log("debugger start456!!!!!!!");
+console.log("debugger start123789!!!!!!!");
 
 ReactDOM.render(
   <Hello compiler="Typescript" framework="React" />,
